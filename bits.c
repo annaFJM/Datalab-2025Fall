@@ -19,7 +19,10 @@
  * Difficulty: 1
  */
 int bitAnd(int x, int y) {
-    return 2;
+    // ~(A & B) = (~A | ~B)
+    // A & B = ~(~A | ~B)
+    // printf("res = 0x%x", ~(~x | ~y));
+    return ~(~x | ~y);
 }
 
 /*
